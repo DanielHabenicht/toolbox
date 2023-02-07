@@ -1,0 +1,26 @@
+<p>encoding works!</p>
+
+<table>
+    <thead>
+        <tr>
+            <td>Character</td>
+            <td>Number</td>
+            <td>Regex</td>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let row of rows">
+            <tr [style]="row.matches ? 'background-color: green;' : ''">
+                <td>
+                    {{row.character}}
+                </td>
+                <td>
+                    {{row.index}}
+                </td>
+                <td>
+                    {{row.matches}}
+                </td>
+            </tr>
+        </ng-container>
+    </tbody>
+</table>
